@@ -6,7 +6,7 @@ auth.token = "game_frp"
 name = "cloud"
 type = "tcp"
 localIP = "127.0.0.1"
-localPort = 3309 #自己的服务端口
+localPort = 7010 #自己的服务端口
 remotePort = 7010 #对外的访问端口: 192.168.11.48:7010
 
 [[proxies]]

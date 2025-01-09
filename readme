@@ -1,6 +1,7 @@
 原项目 https://github.com/fatedier/frp
-
+   
 0、frp服务器部署在192.168.11.48
+dashboard http://192.168.11.48:7500/static/#/proxies/tcp
 
 1、修改配置conf/frpc.toml
 注意：先每个人预留10个端口
