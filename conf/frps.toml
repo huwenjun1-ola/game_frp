@@ -1,0 +1,10 @@
+bindPort = 7000
+auth.token = "game_frp"
+# 服务端仪表盘的端口, 可以用浏览器访问查看
+webServer.addr = "0.0.0.0"
+webServer.port = 7500
+# 服务端仪表盘的用户密码
+webServer.user = "admin"
+webServer.password = "admin"
+# 虚拟主机端口
+vhostHTTPPort = 8080
