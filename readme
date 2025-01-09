@@ -1,11 +1,21 @@
+原项目 https://github.com/fatedier/frp
+
+0、frp服务器部署在192.168.11.48
 
 1、修改配置conf/frpc.toml
-注意：先每个人预留10个端口.
+注意：先每个人预留10个端口
 [[proxies]]
 name = "cloud"
 type = "tcp"
 localIP = "127.0.0.1"
 localPort = 3309 #自己的服务端口
 remotePort = 7010 #对外的访问端口: 192.168.11.48:7010
+
+[[proxies]]
+name = "zero"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 3309 #自己的服务端口
+remotePort = 7020 #对外的访问端口
 
 2、./start_client_mac.sh
