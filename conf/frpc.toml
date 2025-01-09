@@ -3,16 +3,38 @@ serverPort = 7000
 auth.token = "game_frp"
 
 [[proxies]]
-name = "test-tcp"
+name = "cloud"
 type = "tcp"
 localIP = "127.0.0.1"
-localPort = 22
-remotePort = 6000
-
+localPort = 3309 #自己的服务端口
+remotePort = 7010 #对外的访问端口: 192.168.11.48:7001
 
 [[proxies]]
-name = "web"
-type = "http"	
+name = "zero"
+type = "tcp"
 localIP = "127.0.0.1"
-localPort = 3309						
-customDomains = ["192.168.11.48"]
+localPort = 3309 #自己的服务端口
+remotePort = 7020 #对外的访问端口: 192.168.11.48:7001
+
+[[proxies]]
+name = "boros"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 3309 #自己的服务端口
+remotePort = 7030 #对外的访问端口: 192.168.11.48:7001
+
+[[proxies]]
+name = "ant"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 3309 #自己的服务端口
+remotePort = 7040 #对外的访问端口: 192.168.11.48:7001
+
+
+# [[proxies]]
+# name = "web"
+# type = "http"	
+# localIP = "127.0.0.1"
+# localPort = 3309						
+# customDomains = ["192.168.11.48"]
+
